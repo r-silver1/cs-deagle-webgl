@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="asg2_style.css">
+        <title>Assignment4</title>
+        <script src="lib/webgl-utils.js"></script>
+        <script src="lib/webgl-debug.js"></script>
+        <script src="lib/cuon-utils.js"></script>
+        <script src="lib/cuon-matrix.js"></script>
+        <script src="webGLInit.js"></script>
+        <script src="pattern_grids.js"></script>
+        <script src="Cube.js"></script>
+        <script src="Sphere.js"></script>
+        <script src="Twist.js"></script>
+        <script src="roundCone.js"></script>
+        <script src="Camera.js"></script>
+        <script src="asg4.js"></script>
+        <script src="shapesBuilder.js"></script>
+        <script src="ColorScheme.js"></script>
+    </head>
+
+    <body onload="main()">
+        <h1>
+            Assignment 4: Shading
+        </h1>
+        <h2>
+            Robert Silver CSE 160 UCSC Fall 2020
+            <br>
+        </h2>
+        <br>
+
+        <!-- todo: wrap everything below in div with own class to make position easier? -->
+        <canvas id="bigCan" width="400" height="400">
+            Please use a browser that supports "canvas"
+        </canvas>
+        <br>
+
+        <!-- https://www.w3schools.com/js/tryit.asp?filename=tryjs_button_value -->
+        <div id="perform"></div>
+    <div class="centerDiv">
+
+            <div class = "leftDiv">
+                <button name="lightOn" id="LightOn">Phong Shading On</button>  <button name="lightOff" id="LightOff">Phong Shading Off</button><br><br>
+                <button name="normalColOn" id="normColOn">Use Normal Color On</button>  <button name="normalColOff" id="normColOff">Use Surface Color</button><br><br>
+                <button name="normalsOn" id="normOn">Show Normal Lines</button>  <button name="normalsOff" id="normOff">Hide Normal Lines</button>
+                <br><br>
+                <button name="effTest" id="effTest">Toggle Efficiency Test</button>
+            </div>
+            <div class = "rightDiv">
+                <p>
+                    CONTROLS:<br><br>
+                    WASD+mouse to move, q/e to rotate left and right, t/g to rotate up and down <br><br>
+                    F: activate/deactivate flashlight<br><br>
+                    arrow key up/down to fly up/down<br><br>
+                </p>
+
+                <div id="fpsDisplay"></div>
+            </div>
+    </div>
+
+    </body>
+</html>
